@@ -35,3 +35,31 @@
     display: flex;
     justify-content: center;
 }
+
+@media (max-width: 768px) {
+    .profile-layout {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        min-height: 100vh;
+    }
+
+    .left-panel {
+        padding: 36px 20px 28px;
+        min-height: 42vh;
+        justify-content: center;
+    }
+
+    .right-panel {
+        padding: 28px 20px 36px;
+        min-height: 58vh;
+        justify-content: flex-start;
+        background: rgba(255, 255, 255, 0.72);
+        backdrop-filter: blur(8px);
+        margin-top: -16px;
+        box-shadow: 0 -8px 24px rgba(17, 24, 39, 0.08);
+    }
+
+    .actions {
+        margin-top: 18px;
+    }
+}

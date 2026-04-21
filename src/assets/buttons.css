@@ -29,3 +29,15 @@
 .github-btn:active {
     transform: translateY(0) scale(0.98);
 }
+
+@media (max-width: 768px) {
+    .icon-btn {
+        width: 56px;
+        height: 56px;
+    }
+
+    .github-btn svg {
+        width: 26px;
+        height: 26px;
+    }
+}
