@@ -1,0 +1,40 @@
+/* src/assets/profile.css */
+.avatar {
+    width: 112px;
+    height: 112px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 42px;
+    font-weight: 700;
+    background: rgba(255, 255, 255, 0.18);
+    border: 3px solid rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(4px);
+    margin-bottom: 16px;
+}
+
+.name {
+    margin: 4px 0;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.role {
+    margin: 0 0 26px;
+    font-size: 15px;
+    opacity: 0.92;
+}
+
+.section-title {
+    margin: 0 0 14px;
+    font-size: 34px;
+    color: #111827;
+}
+
+.bio {
+    margin: 0;
+    color: #4b5563;
+    line-height: 1.85;
+    font-size: 18px;
+    max-width: 900px;
+}
