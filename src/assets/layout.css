@@ -23,10 +23,41 @@
 }
 
 .right-panel {
+    position: relative;
+    overflow: hidden;
     padding: 64px 72px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.right-panel::before {
+    content: "";
+    position: absolute;
+    top: -140px;
+    right: -120px;
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+    background: rgba(99, 102, 241, 0.14);
+    filter: blur(2px);
+}
+
+.right-panel::after {
+    content: "";
+    position: absolute;
+    bottom: -160px;
+    left: 18%;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    background: rgba(236, 72, 153, 0.12);
+    filter: blur(2px);
+}
+
+.right-panel > * {
+    position: relative;
+    z-index: 1;
 }
 
 .actions {

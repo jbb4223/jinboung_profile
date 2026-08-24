@@ -25,10 +25,25 @@
     opacity: 0.92;
 }
 
+.profile-hero {
+    max-width: 860px;
+}
+
+.eyebrow {
+    margin: 0 0 10px;
+    color: #6366f1;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
 .section-title {
-    margin: 0 0 14px;
-    font-size: 34px;
+    margin: 0 0 16px;
+    font-size: 42px;
+    line-height: 1.18;
     color: #111827;
+    letter-spacing: -0.04em;
 }
 
 .bio {
@@ -37,6 +52,86 @@
     line-height: 1.85;
     font-size: 18px;
     max-width: 900px;
+}
+
+.summary-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    margin-top: 36px;
+}
+
+.summary-card {
+    padding: 24px;
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.78);
+    border: 1px solid rgba(229, 231, 235, 0.9);
+    box-shadow: 0 18px 45px rgba(17, 24, 39, 0.08);
+}
+
+.summary-number {
+    display: inline-flex;
+    margin-bottom: 16px;
+    color: #7c3aed;
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: -0.04em;
+}
+
+.summary-card strong {
+    display: block;
+    margin-bottom: 8px;
+    color: #111827;
+    font-size: 17px;
+}
+
+.summary-card p {
+    margin: 0;
+    color: #6b7280;
+    font-size: 14px;
+    line-height: 1.65;
+}
+
+.skill-section,
+.focus-section {
+    margin-top: 30px;
+    padding: 26px;
+    border-radius: 26px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 18px 45px rgba(17, 24, 39, 0.06);
+}
+
+.skill-section h3,
+.focus-section h3 {
+    margin: 0 0 18px;
+    color: #111827;
+    font-size: 20px;
+}
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-list span {
+    padding: 9px 14px;
+    border-radius: 999px;
+    color: #4338ca;
+    font-size: 14px;
+    font-weight: 700;
+    background: #eef2ff;
+    border: 1px solid #c7d2fe;
+}
+
+.focus-section ul {
+    display: grid;
+    gap: 12px;
+    margin: 0;
+    padding-left: 20px;
+    color: #4b5563;
+    line-height: 1.7;
 }
 
 @media (max-width: 768px) {
@@ -56,8 +151,16 @@
         margin-bottom: 0;
     }
 
+    .profile-hero {
+        text-align: center;
+    }
+
+    .eyebrow {
+        font-size: 12px;
+    }
+
     .section-title {
-        font-size: 26px;
+        font-size: 28px;
         text-align: center;
     }
 
@@ -66,5 +169,36 @@
         line-height: 1.7;
         text-align: center;
         max-width: 100%;
+    }
+
+    .summary-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+        margin-top: 26px;
+    }
+
+    .summary-card {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .skill-section,
+    .focus-section {
+        margin-top: 20px;
+        padding: 22px;
+    }
+
+    .skill-section h3,
+    .focus-section h3 {
+        text-align: center;
+    }
+
+    .skill-list {
+        justify-content: center;
+    }
+
+    .focus-section ul {
+        padding-left: 18px;
+        font-size: 14px;
     }
 }
